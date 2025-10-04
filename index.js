@@ -9,9 +9,11 @@ const PORT = process.env.PORT || 5000;
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
-}).then(() => {
+})
+.then(() => {
   console.log('Successfully connected to the database');
-}).catch(err => {
+})
+.catch(err => {
   console.error('Error connecting to the database:', err);
 });
 

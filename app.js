@@ -12,14 +12,14 @@ mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
-  console.log('Kết nối tới cơ sở dữ liệu thành công');
+  console.log('Connected to the database successfully');
 }).catch(err => {
-  console.error('Lỗi kết nối tới cơ sở dữ liệu:', err);
+  console.error('Database connection error:', err);
 });
 
 app.use(express.json());
 app.use('/api/nfts', nftRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Server đang chạy trên cổng ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });

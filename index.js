@@ -5,7 +5,7 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Kết nối đến cơ sở dữ liệu MongoDB
+// Connect to MongoDB database
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true

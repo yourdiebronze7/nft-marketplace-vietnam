@@ -1,0 +1,16 @@
+{
+  "name": "nft-marketplace-vietnam",
+  "version": "1.0.0",
+  "description": "Chợ NFT Việt Nam",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "dotenv": "^8.2.0"
+  },
+  "author": "Bạn",
+  "license": "MIT"
+}

@@ -20,6 +20,11 @@ mongoose.connect(process.env.MONGODB_URI, {
 app.use(express.json());
 app.use('/api/nfts', nftRoutes);
 
+// Middleware to handle 404 errors
+app.use((req, res, next) => {
+  res.status(404).json({ message: 'Resource not found' });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

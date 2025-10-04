@@ -18,9 +18,9 @@ mongoose.connect(process.env.MONGODB_URI, {
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Chào mừng đến với Chợ NFT Việt Nam!');
+  res.send('Welcome to the Vietnam NFT Marketplace!');
 });
 
 app.listen(PORT, () => {
-  console.log(`Server đang chạy trên cổng ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });

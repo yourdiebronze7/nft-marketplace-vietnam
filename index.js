@@ -10,9 +10,9 @@ mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
-  console.log('Kết nối tới cơ sở dữ liệu thành công');
+  console.log('Successfully connected to the database');
 }).catch(err => {
-  console.error('Lỗi kết nối tới cơ sở dữ liệu:', err);
+  console.error('Error connecting to the database:', err);
 });
 
 app.use(express.json());
